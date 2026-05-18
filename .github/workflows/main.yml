@@ -1,3 +1,10 @@
-Welcome to HSE Courses & Consultancy.
+name: Project Welcome Workflow
 
-This platform provides free HSE learning resources, safety documents, and consultancy support for students, technicians, engineers, and professionals interested in Health, Safety & Environment practices.
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Welcome Message
+        run: echo "Welcome to HSE Courses & Consultancy!"
